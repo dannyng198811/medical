@@ -11,7 +11,7 @@ require_once 'init.php';
  
   
   // load template
-  $template = $twig->loadTemplate('location.html');
+  $template = $twig->loadTemplate('inquiry.html');
   
   // set template variables
   // render template
