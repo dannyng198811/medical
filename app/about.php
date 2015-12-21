@@ -1,17 +1,17 @@
 <?php
 require_once 'init.php';
 
-    
+    /*
     $stmt  =  $db -> prepare ("SELECT* FROM page where id=:id");
     $stmt->bindValue(':id', $_GET['page_id'], PDO::PARAM_INT);
     $stmt ->execute();
     $page = $stmt->fetch();
     
-    
+    */
  
   
   // load template
-  $template = $twig->loadTemplate('page.html');
+  $template = $twig->loadTemplate('about.html');
   
   // set template variables
   // render template
@@ -19,8 +19,7 @@ require_once 'init.php';
       array(
  
            'menu'=>$menu,
-         'categories'=> $categories,
-          'page'=>$page,
+        
           'system'=>$system
   
   )
