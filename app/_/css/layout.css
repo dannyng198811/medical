@@ -1,0 +1,84 @@
+/******************************************************
+* LAYOUT.SCSS
+*	Main site layout styles go in this file.
+*	Iclude styles for the site header and footer,
+*	main body and sidebars, etc.
+*	All styles for components/sections that are used
+*	site wide.
+\******************************************************/
+
+.nop{padding:0!important;}
+.mlr0{margin-left:0!important;margin-right:0!important;}
+.bp1{padding-bottom:1rem!important;}
+.mtb03{margin:0.3rem 0;}
+.mt03{margin-bottom:0.3rem;}
+.blue{color:#283587;}
+.unline{text-decoration:underline;}
+.mtb2{margin-top:2rem;margin-bottom:2rem;}
+
+
+.ui.container {
+    width: 980px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block;
+    
+}
+
+.header{
+    padding-top:15px !important;
+    background:url('../img/header-bg.jpg') center center;
+    background-size:100% auto;
+    border-bottom:2px solid #224099;
+}
+
+.content{border-bottom:2px solid #224099;}
+
+.menu{padding-top:1rem;}
+.menu ul{width:100%;text-align:center;}
+.menu ul li{display:inline-block;list-style:none;min-width:110px;text-align: center;}
+.menu ul li a{
+    color:#605e5e;
+    line-height:1.7rem;
+    display:block;
+    border:1px solid #ccccce;
+    margin-left: -4px;
+    background:url('../img/tit-bgw.jpg') center;
+    transition:0.3s;
+}
+
+.down-menu{position:relative;}
+.down-menu ul{position:absolute;display:none;}
+.down-menu:hover ul{display:block;}
+
+.menu ul li a:hover{background:url('../img/tit-bg.jpg') center;color:#fff;border-color:#224099}
+
+.promo{width:210px!important;left:-5rem;}
+.promo li{width:100%}
+
+
+.slider{margin-bottom:1.5rem;}
+.tit-style{
+    border-bottom:2px solid #224099; 
+    
+}
+.tit-style span{
+    display:inline-block;background:url('../img/tit-bg.jpg');background-size:100% 100%;color:#fff;padding:5px 10px;}
+
+.move-cov{position: relative;overflow:hidden;}
+.move-cov div p{margin-top:0;margin-bottom:0;color:#fff;line-height:2rem;}
+.move-cov div{position:absolute;bottom:0;left:0;right:0;top:8.5rem;background-color:rgba(40,53,135,0.5);transition-duration: 0.3s;transition-timing-function: ease-out;}
+.move-cov:hover div{top:6.2rem;}
+
+
+
+.footer{margin-top:1rem;}
+.icons{position:relative;}
+.icons span{display:inline-block;width:17px;height:17px;background:url('../img/icons.jpg');position: absolute;}
+.icons b{font-weight:300;padding-left:2rem;}
+.tel{background-position:0 0;}
+.mail{background-position:-17px 0!important;}
+.cform{background-position:-34px 0!important;}
+.add{background-position:-51px 0!important;}
+
+.copyr{font-size:10px;}
