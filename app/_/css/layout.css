@@ -51,7 +51,8 @@
 .down-menu ul{position:absolute;display:none;}
 .down-menu:hover ul{display:block;}
 
-.menu ul li a:hover{background:url('../img/tit-bg.jpg') center;color:#fff;border-color:#224099}
+.menu ul li a:hover,
+.active{background:url('../img/tit-bg.jpg') center!important;color:#fff!important;border-color:#224099!important}
 
 .promo{width:210px!important;left:-5rem;}
 .promo li{width:100%}
@@ -82,3 +83,9 @@
 .add{background-position:-51px 0!important;}
 
 .copyr{font-size:10px;}
+
+.tip{width:340px;height:61px;margin-bottom:1rem;}
+.tbg1{background:url('../img/tip2.png');}
+.tbg2{background:url('../img/tip1.png');}
+.tbg3{background:url('../img/tip3.png');}
+.tip p{margin:0;line-height:80px;text-align:center;padding-left:30px;}
