@@ -13,6 +13,7 @@
 .mtb03{margin:0.3rem 0;}
 .mt03{margin-bottom:0.3rem;}
 .blue{color:#283587;}
+.red{color:red;}
 .unline{text-decoration:underline;}
 .mtb2{margin-top:2rem;margin-bottom:2rem;}
 
@@ -89,3 +90,21 @@
 .tbg2{background:url('../img/tip1.png');}
 .tbg3{background:url('../img/tip3.png');}
 .tip p{margin:0;line-height:80px;text-align:center;padding-left:30px;}
+
+/*form set*/
+.ui.checkbox input.hid {
+    z-index: -1;
+}
+.form{padding:20px;border:1px solid #eee;border-radius:8px;}
+
+.checkbox input[type="checkbox"],.checkbox input[type="radio"] {
+    cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0 !important;
+    outline: 0px none;
+    z-index: 3;
+    width: 17px;
+    height: 17px;
+}

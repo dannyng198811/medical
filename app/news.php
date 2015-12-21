@@ -2,23 +2,20 @@
 require_once 'init.php';
 
     
-    $stmt  =  $db -> prepare ("SELECT* FROM promotion where id=:id");
-    $stmt->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
+    $stmt  =  $db -> prepare ("SELECT* FROM news ");
     $stmt ->execute();
     $promotion = $stmt->fetchAll();
-
   
   // load template
-  $template = $twig->loadTemplate('promotion.html');
+  $template = $twig->loadTemplate('news.html');
   
   // set template variables
   // render template
   echo $template->render(
       array(
            'menu'=>$menu,
-//         'promotion'=>$promotion,
+         'newses'=>$newses,
           'system'=>$system
   )
   
   );
-

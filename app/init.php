@@ -3,7 +3,7 @@
 require_once './Twig/Autoloader.php';
 Twig_Autoloader::register();
  //read from databases
-    $dsn = "mysql:host=localhost;dbname=npc";
+    $dsn = "mysql:host=192.168.1.147;dbname=npc";
     $db = new PDO($dsn, 'root', '123123');
     $db->query('set names utf8;');
 
