@@ -1,4 +1,11 @@
-<?php require_once 'init.php';?>
+<?php require_once 'init.php';
+ 
+
+    $stmt = $db->prepare("SELECT* FROM promotion where id=:id");
+    $stmt->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
+    $stmt ->execute();     
+    $promotion = $stmt->fetch();
+?>
 <?php include 'inc/header.php'  ?>
 
 
@@ -6,13 +13,13 @@
      <div class="ui container mtb2">
          <div class="ui grid">
             <div class="sixteen wide column">
-              <img src="/_/img/pomo1.jpg"/>
+              <img src="<?php echo $promotion['image'] ?>"/>
             </div>
             <div class="six wide column">
                
-                      <div class="tip tbg1"><p class="blue">適合眼皮較薄、脂肪少次單眼皮、鴛鴦眼之人仕</p></div>
-                      <div class="tip tbg2"><p class="blue">適合眼皮較薄、脂肪少次單眼皮、鴛鴦眼之人仕</p></div>
-                      <div class="tip tbg3"><p class="blue">適合眼皮較薄、脂肪少次單眼皮、鴛鴦眼之人仕</p></div>
+                      <div class="tip tbg1"><p class="blue"><?php echo $promotion['content_row1'] ?></p></div>
+                      <div class="tip tbg2"><p class="blue"><?php echo $promotion['content_row2'] ?></p></div>
+                      <div class="tip tbg3"><p class="blue"><?php echo $promotion['content_row3'] ?></p></div>
               
             </div>
              
@@ -20,12 +27,12 @@
                <form class="ui form">
                    
   <div class="field">
-    <label>姓名：<b class="red">*<b/></label>
+      <label>姓名：<b class="red">*</b></label>
     <input name="first-name" placeholder="First Name" type="text">
   </div>
       
   <div class="field">
-    <label>年龄：<b class="red">*<b/></label>
+    <label>年龄：<b class="red">*</b></label>
     <select class="ui dropdown">
       <option value="0">18至25</option>
       <option value="1">26至32</option>
@@ -37,7 +44,7 @@
   </div>
  
    <div class="field">
-    <label>姓名：<b class="red">*<b/></label>
+    <label>姓名：<b class="red">*</b></label>
     <input name="first-name" placeholder="First Name" type="text">
   </div>
        

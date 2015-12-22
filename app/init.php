@@ -4,28 +4,21 @@
 //Twig_Autoloader::register();
  
 //read from databases
+    try{
     $dsn = "mysql:host=120.24.233.54;dbname=php";
     $db = new PDO($dsn, 'danny', 'Ud0891802183');
     $db->query('set names utf8;');
-
+    }catch(Exception $e){
+        echo "Cannot connect to database,Please come back later!";
+         
+        exit();   
+    }
 
      $rs = $db->query("SELECT* FROM system");
     $system = $rs->fetch();
     
-    $rs = $db->query("SELECT* FROM menu");
-    $menu = $rs->fetchAll();
-    
-     $rs = $db->query("SELECT * FROM promotion");
-    $promotions = $rs->fetchAll();
-
-  $rs = $db->query("SELECT * FROM service");
-    $services = $rs->fetchAll();
-
-  $rs = $db->query("SELECT * FROM news");
-    $newses = $rs->fetchAll();
-    
-    $rs = $db->query("SELECT * FROM sharing");
-    $sharings = $rs->fetchAll();
+   
+ 
      
 
     

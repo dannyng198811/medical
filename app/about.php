@@ -9,13 +9,13 @@ require_once 'init.php';?>
          
              <div class="eight wide column">
                 <h4 class="tit-style"><span>集团简介</span></h4> 
-                <p>{{promotion.promotion}} </p>
+                <p><?php echo $system['about_group_desc'] ?></p>
                 <h4 class="tit-style"><span>集团品牌</span></h4> 
-                <p>{{promotion.promotion}} </p>
+                <p><?php echo $system['about_brand_desc'] ?> </p>
                  <h4 class="tit-style"><span>集团使命</span></h4> 
-                <p>{{promotion.promotion}} </p>
+                <p><?php echo $system['about_mission_desc'] ?> </p>
                  <h4 class="tit-style"><span>集团核心价值</span></h4> 
-                <p>{{promotion.promotion}} </p>
+                <p><?php echo $system['about_value_desc'] ?></p>
              </div>
              
              <div class="eight wide column">
@@ -50,28 +50,7 @@ require_once 'init.php';?>
              <div class="column row nop"><p class="mt03">全港分店地址： </p></div>
              <div class="three column row nop">
                <div class="column">
-                 <p class="mlr0">中環店 : 中環皇后大道中70號卡佛大廈22樓2206-07室<br/>
-電話 : 2882 6100</p>
-                   <p class="mlr0">銅鑼灣店 : 銅鑼灣渣甸街50號渣甸中心16樓全層<br/>
-電話 : 2567 8444</p>
-                   <p class="mlr0">尖沙咀店(1) : 尖沙咀漆咸道南57-59號金馬倫中心11樓全層<br/>
-電話 : 3105 0171</p>
-                 </div>
-               <div class="column">
-                 <p class="mlr0">中環店 : 中環皇后大道中70號卡佛大廈22樓2206-07室<br/>
-電話 : 2882 6100</p>
-                   <p class="mlr0">銅鑼灣店 : 銅鑼灣渣甸街50號渣甸中心16樓全層<br/>
-電話 : 2567 8444</p>
-                   <p class="mlr0">尖沙咀店(1) : 尖沙咀漆咸道南57-59號金馬倫中心11樓全層<br/>
-電話 : 3105 0171</p>
-               </div>
-               <div class="column">
-                 <p class="mlr0">中環店 : 中環皇后大道中70號卡佛大廈22樓2206-07室<br/>
-電話 : 2882 6100</p>
-                   <p class="mlr0">銅鑼灣店 : 銅鑼灣渣甸街50號渣甸中心16樓全層<br/>
-電話 : 2567 8444</p>
-                   <p class="mlr0">尖沙咀店(1) : 尖沙咀漆咸道南57-59號金馬倫中心11樓全層<br/>
-電話 : 3105 0171</p>  
+                <?php echo $system['location'] ?> 
                </div>
                 
              </div>

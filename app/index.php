@@ -1,5 +1,11 @@
 <?php
 require_once 'init.php';
+
+
+
+$rs = $db->query("SELECT * FROM sharing");
+    $sharings = $rs->fetchAll();
+
 ?>
 
 <?php include 'inc/header.php'  ?>
@@ -23,10 +29,7 @@ require_once 'init.php';
            
                 <div class="eight wide column">
                    <h4 class="tit-style"><span>EM簡介</span></h4> 
-                    <p>EXPERT MEDICAL嘉悅醫療是一間集醫學美容、醫學塑形、牙科為一體的一站式大型連鎖醫療美容集團，匯聚醫護界精英，配備世界級先進醫學美容儀器，透過時下最新、最先進的醫學美容科技為個人的高品質生活保駕護航。</p>
-                    <p>專業：專業的醫護團隊，專業的先進儀器，我們提供專業有效的醫學美容服務；</p>
-                    <p>信任：顧客的信任是我們進步的動力，做值得信賴的醫學美容集團；</p>
-   <p>關懷：以顧客為中心，以顧客需要為出發點，提供舒適的環境和溫馨的服務，點滴關懷伴隨您的美麗蛻變。</p>
+                <p>  <?php echo $system['home_desc'] ?></p>
                     <div class="ui three column grid">
                         <div class="column"><img src="/_/img/index2.jpg"/></div>
                         <div class="column"><img src="/_/img/index3.jpg"/></div>
@@ -60,106 +63,27 @@ require_once 'init.php';
           <h4 class="tit-style"><span>星級分享</span></h4>
         </div> 
       </div><!--ui grid end-->
-      
       <div class="ui grid">
-        <div class="five column row">
-           <div class="column bp1">
-               <a href="#">
-               <div class="move-cov">
-                 <img src="/_/img/cou1.jpg"/>
-                 <div>
-                     <p>立即體驗分享</p>
-                     
-                 </div>
-               </div></a>
-               
-               <p class="mtb03 blue">Jolie 陈逸璇</p>
-               <p class="mtb03">Doublo-s 13mm Hifu</p>
-            </div><!--a group end-->
+          <div class="five column row">  
+            <?php foreach( $sharings as $sh){?>
             
               <div class="column bp1">
                <a href="#">
                <div class="move-cov">
-                 <img src="/_/img/cou1.jpg"/>
+                 <img src="<?php echo $sh['image'] ?>"/>
                  <div>
                      <p>立即體驗分享</p>
                      
                  </div>
                </div></a>
                
-               <p class="mtb03 blue">Jolie 陈逸璇</p>
-               <p class="mtb03">Doublo-s 13mm Hifu</p>
+               <p class="mtb03 blue"><?php echo $sh['sharing'] ?></p>
+               <p class="mtb03"><?php echo $sh['desc'] ?></p>
             </div><!--a group end-->
-            
-              <div class="column bp1">
-               <a href="#">
-               <div class="move-cov">
-                 <img src="/_/img/cou1.jpg"/>
-                 <div>
-                     <p>立即體驗分享</p>
-                     
-                 </div>
-               </div></a>
-               
-               <p class="mtb03 blue">Jolie 陈逸璇</p>
-               <p class="mtb03">Doublo-s 13mm Hifu</p>
-            </div><!--a group end-->
-            
-              <div class="column bp1">
-               <a href="#">
-               <div class="move-cov">
-                 <img src="/_/img/cou1.jpg"/>
-                 <div>
-                     <p>立即體驗分享</p>
-                     
-                 </div>
-               </div></a>
-               
-               <p class="mtb03 blue">Jolie 陈逸璇</p>
-               <p class="mtb03">Doublo-s 13mm Hifu</p>
-            </div><!--a group end-->
-            
-              <div class="column bp1">
-               <a href="#">
-               <div class="move-cov">
-                 <img src="/_/img/cou1.jpg"/>
-                 <div>
-                     <p>立即體驗分享</p>
-                     
-                 </div>
-               </div></a>
-               
-               <p class="mtb03 blue">Jolie 陈逸璇</p>
-               <p class="mtb03">Doublo-s 13mm Hifu</p>
-            </div><!--a group end-->
-            
-              <div class="column bp1">
-               <a href="#">
-               <div class="move-cov">
-                 <img src="/_/img/cou1.jpg"/>
-                 <div>
-                     <p>立即體驗分享</p>
-                     
-                 </div>
-               </div></a>
-               
-               <p class="mtb03 blue">Jolie 陈逸璇</p>
-               <p class="mtb03">Doublo-s 13mm Hifu</p>
-            </div><!--a group end-->
-            
-              <div class="column bp1">
-               <a href="#">
-               <div class="move-cov">
-                 <img src="/_/img/cou1.jpg"/>
-                 <div>
-                     <p>立即體驗分享</p>
-                     
-                 </div>
-               </div></a>
-               
-               <p class="mtb03 blue">Jolie 陈逸璇</p>
-               <p class="mtb03">Doublo-s 13mm Hifu</p>
-            </div><!--a group end-->
+           
+            <?php } ?>
+
+             
           
         </div>
       </div><!--ui grid end-->

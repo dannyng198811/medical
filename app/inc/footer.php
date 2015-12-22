@@ -4,7 +4,7 @@
             <div class="eight column row">
                <div class="seven wide column">
                   <p class="mt03">嘉悅醫療集團</p>
-                  <p>集團旗下三大品牌– Dr EXP醫學美容、美型堂及aroma。Dr EXP醫學美容為醫療品牌，為客戶提供一糸列醫學整形及注射類手術；美型堂為生活美容品牌，主要提供不同種類之生活美容療程。</p>
+                  <p><?php echo $system['footer_desc'] ?></p>
                </div>
                  
                <div class="right floated seven wide column">
@@ -29,7 +29,9 @@
         <script src="/_/bower_components/html5-boilerplate/js/plugins.js"></script>
 <!-- <script src="/_/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
          <script src="/_/bower_components/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
-          <script src="/_/bower_components/semantic-ui-form/form.min.js"></script>
+         <script src="/_/bower_components/masonry/dist/masonry.pkgd.min.js"></script>
+
+<!--          <script src="/_/bower_components/semantic-ui-form/form.min.js"></script>-->
         <script src="/_/js/functions.js"></script>
         <script src="/_/js/validation.js"></script>
         
@@ -40,7 +42,16 @@
 <script src="//localhost:99/livereload.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-  
+  // init Masonry
+  var $grid = $('#grid').masonry({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    columnWidth: '.grid-sizer'
+  });
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry();
+});
 });
 </script>
 <!-- /build -->

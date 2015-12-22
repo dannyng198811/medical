@@ -4,8 +4,8 @@
   "dependencies": {
     "html5-boilerplate": "~4.2.0",
     "modernizr": "~2.6.2",
-    "jquery": "~1.10.2"
+    "jquery": "~1.10.2",
+    "masonry": "~3.3.2"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }

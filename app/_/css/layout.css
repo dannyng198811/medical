@@ -37,7 +37,7 @@
 
 .menu{padding-top:1rem;}
 .menu ul{width:100%;text-align:center;}
-.menu ul li{display:inline-block;list-style:none;min-width:110px;text-align: center;}
+.menu ul li{display:inline-block;list-style:none;min-width:120px;text-align: center;}
 .menu ul li a{
     color:#605e5e;
     line-height:1.7rem;
@@ -48,8 +48,8 @@
     transition:0.3s;
 }
 
-.down-menu{position:relative;}
-.down-menu ul{position:absolute;display:none;}
+.down-menu{position:relative;z-index:99;}
+.down-menu ul{position:absolute;display:none;width:}
 .down-menu:hover ul{display:block;}
 
 .menu ul li a:hover,
@@ -67,12 +67,16 @@
 .tit-style span{
     display:inline-block;background:url('../img/tit-bg.jpg');background-size:100% 100%;color:#fff;padding:5px 10px;}
 
-.move-cov{position: relative;overflow:hidden;}
-.move-cov div p{margin-top:0;margin-bottom:0;color:#fff;line-height:2rem;}
-.move-cov div{position:absolute;bottom:0;left:0;right:0;top:8.5rem;background-color:rgba(40,53,135,0.5);transition-duration: 0.3s;transition-timing-function: ease-out;}
+.move-cov,.move-cov1{position: relative;overflow:hidden;}
+.move-cov div p,.move-cov1 div p{margin-top:0;margin-bottom:0;color:#fff;line-height:2rem;}
+.move-cov div,.move-cov1 div{position:absolute;bottom:0;left:0;right:0;background-color:rgba(40,53,135,0.5);transition-duration: 0.3s;transition-timing-function: ease-out;}
+.move-cov div{top:8.5rem;}
 .move-cov:hover div{top:6.2rem;}
+.move-cov1 div{top:15rem;}
+.move-cov1:hover div{top:12rem;}
 
-
+.share{position: relative;}
+.share p{position:absolute;bottom:0;left:0;right:0;background:url('../img/tit-bg.jpg');line-height:2rem;width: 445px;text-align: center;color:#fff;}
 
 .footer{margin-top:1rem;}
 .icons{position:relative;}
@@ -107,4 +111,31 @@
     z-index: 3;
     width: 17px;
     height: 17px;
+}
+
+/*news
+#grid div {padding:1px!important;}
+#grid div img{border-radius:3px;}
+ set*/
+
+.grid-sizer,
+.grid-item {
+  width: 33.0%;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+
+/* clear fix */
+#grid:after {
+  content: '';
+  display: block;
+  clear: both;
 }
