@@ -45,44 +45,7 @@
            
          </div><!--ui grid end-->
           
-          <nav class="menu">
-              <ul>
-                  <li><a class="active" href="#">首页</a></li>
-                  <li><a href="#">关于我们</a></li>
-                  <li class="down-menu">
-                       
-                      <a href="#">最新推广</a>
-                     <ul class="promo">
-                         
-                      <li><a href="promotion.php?id={{pro.id}}">{{pro.promotion}}</a></li>
-                      
-                     </ul>
-                  </li>
-                  
-                  <li class="down-menu">
-                      <a href="#">EM服务</a>
-                  <ul>
-                         
-                      <li><a href="#">{{svc.service}}</a></li>
-                     
-                     </ul>
-                  
-                  </li >
-                  <li class="down-menu">
-                      <a href="news.php">EM资讯</a>
-                     
-                  </li>
-                  <li  class="down-menu">
-                      <a href="sharing.php">星级分享</a>
-                  
-                  </li>
-                  
-                  <li><a href="http://www.expertmedical.com.hk/#!blank/cizq">优惠专区</a></li>
-                  <li><a href="#">關於我們</a></li>
-              </ul>
-            
-          </nav>
-
+       <?php include "nav.php" ?>
   </div>
 </div>      
        

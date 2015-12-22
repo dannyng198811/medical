@@ -4,7 +4,7 @@
 //Twig_Autoloader::register();
  
 //read from databases
-    $dsn = "mysql:host=52.77.211.103;dbname=php";
+    $dsn = "mysql:host=120.24.233.54;dbname=php";
     $db = new PDO($dsn, 'danny', 'Ud0891802183');
     $db->query('set names utf8;');
 
