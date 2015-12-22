@@ -1,24 +1,67 @@
-<?php
-require_once 'init.php';
+<?php require_once 'init.php';?>
+<?php include 'inc/header.php'  ?>
 
+
+ <div class="content">
+     <div class="ui container mtb2">
+         <div class="ui grid">
+            <div class="sixteen wide column">
+              <img src="/_/img/pomo1.jpg"/>
+            </div>
+            <div class="six wide column">
+               
+                      <div class="tip tbg1"><p class="blue">適合眼皮較薄、脂肪少次單眼皮、鴛鴦眼之人仕</p></div>
+                      <div class="tip tbg2"><p class="blue">適合眼皮較薄、脂肪少次單眼皮、鴛鴦眼之人仕</p></div>
+                      <div class="tip tbg3"><p class="blue">適合眼皮較薄、脂肪少次單眼皮、鴛鴦眼之人仕</p></div>
+              
+            </div>
+             
+             <div class="ten wide column">
+               <form class="ui form">
+                   
+  <div class="field">
+    <label>姓名：<b class="red">*<b/></label>
+    <input name="first-name" placeholder="First Name" type="text">
+  </div>
+      
+  <div class="field">
+    <label>年龄：<b class="red">*<b/></label>
+    <select class="ui dropdown">
+      <option value="0">18至25</option>
+      <option value="1">26至32</option>
+      <option value="2">33至39</option>
+      <option value="3">40至55</option>
+      <option value="4">55以上</option>
     
-    $stmt  =  $db -> prepare ("SELECT* FROM promotion where id=:id");
-    $stmt->bindValue(':id', $_GET['id'], PDO::PARAM_INT);
-    $stmt ->execute();
-    $promotion = $stmt->fetchAll();
+    </select>
+  </div>
+ 
+   <div class="field">
+    <label>姓名：<b class="red">*<b/></label>
+    <input name="first-name" placeholder="First Name" type="text">
+  </div>
+       
+    <div class="field">
+    <div class="ui checkbox">
+      <input class="hidden" tabindex="0" type="checkbox">
+      <label>I agree to the Terms and Conditions</label>
+    </div>
+   </div>
+ 
+  <button class="ui button" type="submit">Submit</button>
+</form>
+            </div>
+           
+            
+             
+             
+         </div>
+         
+         
+     </div>
+  
+ </div>
+    
 
-  
-  // load template
-  $template = $twig->loadTemplate('promotion.html');
-  
-  // set template variables
-  // render template
-  echo $template->render(
-      array(
-           'menu'=>$menu,
-//         'promotion'=>$promotion,
-          'system'=>$system
-  )
-  
-  );
-
+             
+<?php include 'inc/footer.php'  ?>

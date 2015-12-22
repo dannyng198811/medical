@@ -1,10 +1,11 @@
 <?php
 
-require_once './Twig/Autoloader.php';
-Twig_Autoloader::register();
- //read from databases
-    $dsn = "mysql:host=192.168.1.147;dbname=npc";
-    $db = new PDO($dsn, 'root', '123123');
+//require_once './Twig/Autoloader.php';
+//Twig_Autoloader::register();
+ 
+//read from databases
+    $dsn = "mysql:host=52.77.211.103;dbname=php";
+    $db = new PDO($dsn, 'danny', 'Ud0891802183');
     $db->query('set names utf8;');
 
 
@@ -29,10 +30,10 @@ Twig_Autoloader::register();
 
     
     
-    
- $loader = new Twig_Loader_Filesystem('./_/tpls/');
+//    
+// $loader = new Twig_Loader_Filesystem('./_/tpls/');
   
   // initialize Twig environment
-  $twig = new Twig_Environment($loader, array(
-    //'cache' => './lovecache',
-));
+ // $twig = new Twig_Environment($loader, array(
+  //  'cache' => './lovecache',
+//));

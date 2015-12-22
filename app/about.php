@@ -1,30 +1,91 @@
 <?php
-require_once 'init.php';
+require_once 'init.php';?>
+<?php include 'inc/header.php'  ?>
 
 
-    /*
-    $stmt  =  $db -> prepare ("SELECT* FROM page where id=:id");
-    $stmt->bindValue(':id', $_GET['page_id'], PDO::PARAM_INT);
-    $stmt ->execute();
-    $page = $stmt->fetch();
->>>>>>> 6cb9a4f102a505c32a6797ba51f6ff6a40c0a97a
-    
-    */
+<div class="content">
+     <div class="ui container mtb2">
+         <div class="ui grid">
+         
+             <div class="eight wide column">
+                <h4 class="tit-style"><span>集团简介</span></h4> 
+                <p>{{promotion.promotion}} </p>
+                <h4 class="tit-style"><span>集团品牌</span></h4> 
+                <p>{{promotion.promotion}} </p>
+                 <h4 class="tit-style"><span>集团使命</span></h4> 
+                <p>{{promotion.promotion}} </p>
+                 <h4 class="tit-style"><span>集团核心价值</span></h4> 
+                <p>{{promotion.promotion}} </p>
+             </div>
+             
+             <div class="eight wide column">
+                <img src="/_/img/about-star.png"/>
+             </div>
+             <div class="six column row">
+                 <div class="column">
+                     <a href="/_/img/about2.jpg" data-lightbox="image1" data-title=""><img src="/_/img/about-store1.jpg"/></a>
+                 </div>
+                 
+                  <div class="column">
+                     <a href="/_/img/about2.jpg" data-lightbox="image1" data-title=""><img src="/_/img/about-store1.jpg"/></a>
+                 </div>
+                 
+                  <div class="column">
+                     <a href="/_/img/about2.jpg" data-lightbox="image1" data-title=""><img src="/_/img/about-store1.jpg"/></a>
+                 </div>
+                  <div class="column">
+                     <a href="/_/img/about2.jpg" data-lightbox="image1" data-title=""><img src="/_/img/about-store1.jpg"/></a>
+                 </div>
+                 
+                  <div class="column">
+                     <a href="/_/img/about2.jpg" data-lightbox="image1" data-title=""><img src="/_/img/about-store1.jpg"/></a>
+                 </div>
+                 
+                  <div class="column">
+                     <a href="/_/img/about2.jpg" data-lightbox="image1" data-title=""><img src="/_/img/about-store1.jpg"/></a>
+                 </div>
+                 
+             </div>
+             
+             <div class="column row nop"><p class="mt03">全港分店地址： </p></div>
+             <div class="three column row nop">
+               <div class="column">
+                 <p class="mlr0">中環店 : 中環皇后大道中70號卡佛大廈22樓2206-07室<br/>
+電話 : 2882 6100</p>
+                   <p class="mlr0">銅鑼灣店 : 銅鑼灣渣甸街50號渣甸中心16樓全層<br/>
+電話 : 2567 8444</p>
+                   <p class="mlr0">尖沙咀店(1) : 尖沙咀漆咸道南57-59號金馬倫中心11樓全層<br/>
+電話 : 3105 0171</p>
+                 </div>
+               <div class="column">
+                 <p class="mlr0">中環店 : 中環皇后大道中70號卡佛大廈22樓2206-07室<br/>
+電話 : 2882 6100</p>
+                   <p class="mlr0">銅鑼灣店 : 銅鑼灣渣甸街50號渣甸中心16樓全層<br/>
+電話 : 2567 8444</p>
+                   <p class="mlr0">尖沙咀店(1) : 尖沙咀漆咸道南57-59號金馬倫中心11樓全層<br/>
+電話 : 3105 0171</p>
+               </div>
+               <div class="column">
+                 <p class="mlr0">中環店 : 中環皇后大道中70號卡佛大廈22樓2206-07室<br/>
+電話 : 2882 6100</p>
+                   <p class="mlr0">銅鑼灣店 : 銅鑼灣渣甸街50號渣甸中心16樓全層<br/>
+電話 : 2567 8444</p>
+                   <p class="mlr0">尖沙咀店(1) : 尖沙咀漆咸道南57-59號金馬倫中心11樓全層<br/>
+電話 : 3105 0171</p>  
+               </div>
+                
+             </div>
+             
+             
+             
+         </div>
+         
+         
+     </div>
+  
+ </div>
  
-  
-  // load template
-  $template = $twig->loadTemplate('about.html');
-  
-  // set template variables
-  // render template
-  echo $template->render(
-      array(
- 
-           'menu'=>$menu,
 
-          'system'=>$system
-  
-  )
-  
-  );
 
+
+<?php include 'inc/footer.php'  ?>

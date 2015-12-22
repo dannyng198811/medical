@@ -1,22 +1,8 @@
 <?php
+require_once 'init.php';?>
+<?php include 'inc/header.php'  ?>
+
+<!--放HTML代碼在此-->
 
 
-    require_once 'init.php';
-
- 
-  // load template
-  $template = $twig->loadTemplate('contact.html');
-  
-  // set template variables
-  // render template
-  echo $template->render(
-      array(
- 
-           'menu'=>$menu,
-         'categories'=> $categories
-          ,
-          'system'=>$system
-  
-  )
-  
-  );
+<?php include 'inc/footer.php'  ?>
