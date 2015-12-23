@@ -14,6 +14,7 @@
         exit();   
     }
 
+        $imgurl ="http://www.expertmedical.cn/admin/media/images/";
      $rs = $db->query("SELECT* FROM system");
     $system = $rs->fetch();
     

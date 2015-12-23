@@ -24,7 +24,7 @@
                 {
               ?>
   <div class="grid-item">
-    <img src="http://www.expertmedical.cn/admin/media/images/<?php echo $ns['image'] ?>" />
+    <img src="<?php echo $imgurl.$ns['image'] ?>" />
   </div>
 
     <?php 

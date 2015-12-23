@@ -70,7 +70,7 @@ $rs = $db->query("SELECT * FROM sharing");
               <div class="column bp1">
                <a href="#">
                <div class="move-cov">
-                 <img src="http://www.expertmedical.cn/admin/media/images/<?php echo $sh['image'] ?>"/>
+                 <img src="http://www.expertmedical.cn/admin/media/images/<?php echo $imgurl.$sh['image'] ?>"/>
                  <div>
                      <p>立即体验分享</p>
                      

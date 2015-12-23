@@ -26,7 +26,7 @@
               <div class="column bp1">
                   <a href="<?php echo $svci['link'] ?>">
                <div class="move-cov1">
-                 <img src="http://www.expertmedical.cn/admin/media/images/<?php echo $svci['image'] ?>"/>
+                 <img src="<?php echo $imgurl.$svci['image'] ?>"/>
                  <div>
                      <p><?php echo $svci['serviceItem'] ?></p>
                      

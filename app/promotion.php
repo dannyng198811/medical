@@ -13,7 +13,7 @@
      <div class="ui container mtb2">
          <div class="ui grid">
             <div class="sixteen wide column">
-              <img src="http://www.expertmedical.cn/admin/media/images/<?php echo $promotion['image'] ?>"/>
+              <img src="http://www.expertmedical.cn/admin/media/images/<?php echo $imgurl.$promotion['image'] ?>"/>
             </div>
             <div class="six wide column">
                
