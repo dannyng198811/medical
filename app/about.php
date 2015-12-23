@@ -50,7 +50,7 @@ require_once 'init.php';?>
              <div class="column row nop"><p class="mt03">全港分店地址： </p></div>
              <div class="three column row nop">
                <div class="column">
-                <?php echo $system['location'] ?> 
+                <?php //echo $system['location'] ?> 
                </div>
                 
              </div>

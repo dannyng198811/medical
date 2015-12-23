@@ -6,10 +6,7 @@
     $stmt ->execute();     
     $serviceitems = $stmt->fetchAll();
 
- foreach($serviceitems as $svc)
-{
- 
-}
+
 
 ?>
 
@@ -22,84 +19,25 @@
        <div class="ui grid">
           <div class="five column row">
               
-              
+            <?php 
+               foreach($serviceitems as $svci)
+                {
+              ?>  
               <div class="column bp1">
-                  <a href="#">
+                  <a href="<?php echo $svci['link'] ?>">
                <div class="move-cov1">
-                 <img src="_/img/em1.jpg"/>
+                 <img src="http://www.expertmedical.cn/admin/media/images/<?php echo $svci['image'] ?>"/>
                  <div>
-                     <p>激光治疗仪</p>
+                     <p><?php echo $svci['serviceItem'] ?></p>
                      
                  </div>
                </div></a>
               </div>
               
-              
-               <div class="column bp1">
-                  <a href="#">
-               <div class="move-cov1">
-                 <img src="_/img/em1.jpg"/>
-                 <div>
-                     <p>激光治疗仪</p>
-                     
-                 </div>
-               </div></a>
-              </div>
-              
-               <div class="column bp1">
-                  <a href="#">
-               <div class="move-cov1">
-                 <img src="_/img/em1.jpg"/>
-                 <div>
-                     <p>激光治疗仪</p>
-                     
-                 </div>
-               </div></a>
-              </div>
-              
-               <div class="column bp1">
-                  <a href="#">
-               <div class="move-cov1">
-                 <img src="_/img/em1.jpg"/>
-                 <div>
-                     <p>激光治疗仪</p>
-                     
-                 </div>
-               </div></a>
-              </div>
-              
-               <div class="column bp1">
-                  <a href="#">
-               <div class="move-cov1">
-                 <img src="_/img/em1.jpg"/>
-                 <div>
-                     <p>激光治疗仪</p>
-                     
-                 </div>
-               </div></a>
-              </div>
-              
-               <div class="column bp1">
-                  <a href="#">
-               <div class="move-cov1">
-                 <img src="_/img/em1.jpg"/>
-                 <div>
-                     <p>激光治疗仪</p>
-                     
-                 </div>
-               </div></a>
-              </div>
-              
-               <div class="column bp1">
-                  <a href="#">
-               <div class="move-cov1">
-                 <img src="_/img/em1.jpg"/>
-                 <div>
-                     <p>激光治疗仪</p>
-                     
-                 </div>
-               </div></a>
-              </div>
+              <?php 
+               }
+              ?>
+             
               
               
               

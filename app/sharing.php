@@ -15,47 +15,24 @@
     <div class="ui container mtb2">
        <div class="ui grid">
           <div class="two column row">
+              
+                <?php 
+               foreach($sharings as $sh)
+                {
+              ?>
             <!--循环组1开始-->  
               <div class="column bp1 share">
-                <video width="445" height="250" controls>
-  <source src="movie.mp4" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
-  <source src="movie.webm" type="video/webm">
-  <object data="movie.mp4" width="445" height="250">
-    <embed src="movie.swf" width="445" height="250">
-  </object>
-</video> 
-            <p>激光美白祛斑疗程</p>
+
+          <iframe width="445" height="250" src="<?php echo $sh['viedo'] ?>" frameborder="0" allowfullscreen>            </iframe>
+                  
+                  <p><?php echo $sh['sharing'] ?></p>
+
               </div>
               <!--循环组1结束--> 
-              
-              <!--循环组2开始--> 
-               <div class="column bp1 share">
-                <video width="445" height="250" controls>
-  <source src="movie.mp4" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
-  <source src="movie.webm" type="video/webm">
-  <object data="movie.mp4" width="445" height="250">
-    <embed src="movie.swf" width="445" height="250">
-  </object>
-</video> 
-              <p>激光美白祛斑疗程</p>
-              </div>
-              <!--循环组2结束--> 
-              
-               <!--循环组3开始--> 
-               <div class="column bp1 share">
-                <video width="445" height="250" controls>
-  <source src="movie.mp4" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
-  <source src="movie.webm" type="video/webm">
-  <object data="movie.mp4" width="445" height="250">
-    <embed src="movie.swf" width="445" height="250">
-  </object>
-</video> 
-              <p>激光美白祛斑疗程</p>
-              </div>
-              <!--循环组3结束--> 
+               <?php 
+               }
+              ?>
+                
               
               
            </div><!--two column row end-->

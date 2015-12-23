@@ -3,21 +3,28 @@
         <div class="ui grid centered">
             <div class="eight column row">
                <div class="seven wide column">
-                  <p class="mt03">嘉悅醫療集團</p>
+                  <p class="mt03">
+嘉悦医疗集团
+</p>
                   <p><?php echo $system['footer_desc'] ?></p>
                </div>
                  
                <div class="right floated seven wide column">
-                  <p class="icons"><span class="tel"></span><b>+852 2882 6100</b></p>
-                  <p class="icons"><span class="mail"></span><b>cs@expertmedical.com.hk</b></p>
+                  <p class="icons"><span class="tel"></span><b><?php echo $system['phone_number'] ?></b></p>
+                  <p class="icons"><span class="mail"></span><b><?php echo $system['email'] ?></b></p>
                    <p class="icons"><span class="cform"></span><b><a class="unline" href="#">Contact Form</a></b></p>
-                   <p class="icons"><span class="add"></span><b>香港皇后大道70號卡佛大廈22樓2206-07室  <a class="unline" href="#">Map ></a></b></p>
+                   <p class="icons"><span class="add"></span><b><?php echo $system['address'] ?><a class="unline" href="#">Map ></a></b></p>
                    
                </div>
             </div>
             <div class="eight column row nop">
                 <div class="left floated seven wide column">
-                  <p class="copyr">Copyright © 2015 Expert Medical Group Limited.</p>
+                  <p class="copyr"><?php echo $system['copyright'] ?></p>
+                    
+                </div>
+                <div class="right floated seven wide column">
+                    <p class="copyr">Design by <a href="http://www.c-m.hk" target="blank">Creation Media</a></p>
+                    
                 </div>
             </div>
         </div>

@@ -28,7 +28,7 @@ $rs = $db->query("SELECT * FROM sharing");
        <div class="ui grid">
            
                 <div class="eight wide column">
-                   <h4 class="tit-style"><span>EM簡介</span></h4> 
+                   <h4 class="tit-style"><span>EM简介</span></h4> 
                 <p>  <?php echo $system['home_desc'] ?></p>
                     <div class="ui three column grid">
                         <div class="column"><img src="/_/img/index2.jpg"/></div>
@@ -38,7 +38,7 @@ $rs = $db->query("SELECT * FROM sharing");
                 </div>
                  
                 <div class="eight wide column">
-                   <h4 class="tit-style"><span>熱門療程</span></h4> 
+                   <h4 class="tit-style"><span>热门疗程</span></h4> 
                      <div class="ui four column grid padded">
                        <div class="column"><img src="/_/img/val1.jpg"/></div>
                        <div class="column"><img src="/_/img/val2.jpg"/></div>
@@ -60,7 +60,7 @@ $rs = $db->query("SELECT * FROM sharing");
       
       <div class="ui grid">
         <div class="column">
-          <h4 class="tit-style"><span>星級分享</span></h4>
+          <h4 class="tit-style"><span>星级分享</span></h4>
         </div> 
       </div><!--ui grid end-->
       <div class="ui grid">
@@ -70,9 +70,9 @@ $rs = $db->query("SELECT * FROM sharing");
               <div class="column bp1">
                <a href="#">
                <div class="move-cov">
-                 <img src="<?php echo $sh['image'] ?>"/>
+                 <img src="http://www.expertmedical.cn/admin/media/images/<?php echo $sh['image'] ?>"/>
                  <div>
-                     <p>立即體驗分享</p>
+                     <p>立即体验分享</p>
                      
                  </div>
                </div></a>
