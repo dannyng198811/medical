@@ -13,7 +13,8 @@
         <link rel="stylesheet" href="/_/bower_components/html5-boilerplate/css/main.css">
 <!--  <link rel="stylesheet" href="/_/bower_components/bootstrap/dist/css/bootstrap.min.css">-->
         <link rel="stylesheet" href="/_/bower_components/lightbox2/dist/css/lightbox.css">
-        <link rel="stylesheet" href="/_/bower_components/semantic-ui-form/form.min.css">
+
+        <link rel="stylesheet" href="/_/css/form.min.css">
         <!-- endbuild -->
 
         <!-- build:css({.tmp,app}) /_/css/site-styles.css -->
@@ -25,7 +26,7 @@
         <!-- endbuild -->
 
         <!-- build:js /_/js/lib/modernizr/modernizr.js -->
-        <script src="/_/bower_components/modernizr/modernizr.js"></script>
+        <script src="/_/bower_components/modernizr/dist/js/modernizr.js"></script>
         <!-- endbuild -->
 
     </head>

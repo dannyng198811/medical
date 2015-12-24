@@ -25,8 +25,7 @@
 
           <iframe width="445" height="250" src="<?php echo $sh['viedo'] ?>" frameborder="0" allowfullscreen>            </iframe>
                   
-                  <p><?php echo $sh['sharing'] ?></p>
-
+                  <p><?php echo $sh['sharing'] ?> - <?php echo $sh['desc'] ?></p>
               </div>
               <!--循环组1结束--> 
                <?php 

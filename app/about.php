@@ -21,6 +21,10 @@ require_once 'init.php';?>
              <div class="eight wide column">
                 <img src="/_/img/about-star.png"/>
              </div>
+             
+             
+             
+             <!--
              <div class="six column row">
                  <div class="column">
                      <a href="/_/img/about2.jpg" data-lightbox="image1" data-title=""><img src="/_/img/about-store1.jpg"/></a>
@@ -46,12 +50,17 @@ require_once 'init.php';?>
                  </div>
                  
              </div>
-             
-             <div class="column row nop"><p class="mt03">全港分店地址： </p></div>
+             -->
+             <div class="column row nop  "><p class="mt03">全港分店地址： </p></div>
+            
              <div class="three column row nop">
-               <div class="column">
-                <?php //echo $system['location'] ?> 
-               </div>
+                <?php echo $system['location'] ?> 
+               
+
+
+
+
+                 </div>
                 
              </div>
              

@@ -15,8 +15,8 @@
 .blue{color:#283587;}
 .red{color:red;}
 .unline{text-decoration:underline;}
-.mtb2{margin-top:2rem;margin-bottom:2rem;}
-
+.mtb2{margin-top:2rem!important;margin-bottom:2rem!important;}
+.mtb08{margin:8px 0;}
 
 .ui.container {
     width: 980px;
@@ -49,7 +49,8 @@
 }
 
 .down-menu{position:relative;z-index:99;}
-.down-menu ul{position:absolute;display:none;width:}
+.down-menu ul{position:absolute;display:none;left:-38px}
+.down-menu ul li{width:204px;}
 .down-menu:hover ul{display:block;}
 
 .menu ul li a:hover,
@@ -99,20 +100,33 @@
 .ui.checkbox input.hid {
     z-index: -1;
 }
-.form{padding:20px;border:1px solid #eee;border-radius:8px;}
-
-.checkbox input[type="checkbox"],.checkbox input[type="radio"] {
+.form{padding:20px;}
+.form-bor{border:1px solid #eee;border-radius:8px;background-color:#FAFAFA; -webkit-box-shadow:0 0 10px rgba(0,0,0,.1);  
+  -moz-box-shadow:0 0 10px rgba(0,0,0,.1);  
+  box-shadow:0 0 10px rgba(0,0,0,.1); }
+.ui.button {
     cursor: pointer;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    opacity: 0 !important;
+    display: inline-block;
+    min-height: 1em;
     outline: 0px none;
-    z-index: 3;
-    width: 17px;
-    height: 17px;
+    border: medium none;
+    vertical-align: baseline;
+    background-color:#2B3990;
+    color:#fff;
+    margin: 0px 0.25em 0px 0px;
+    padding: 0.78571em 1.5em;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+   
+    border-radius: 0.2857rem;
+    box-shadow: 0px 0px 0px 1px transparent inset, 0px 0px 0px 0px rgba(39, 41, 43, 0.15) inset;
+    -moz-user-select: none;
+    transition: opacity 0.1s ease 0s, background-color 0.1s ease 0s, color 0.1s ease 0s, box-shadow 0.1s ease 0s, background 0.1s ease 0s;
 }
-
+.ui.button:hover {
+   opacity:0.9;
+}
 /*news
 #grid div {padding:1px!important;}
 #grid div img{border-radius:3px;}
@@ -120,7 +134,7 @@
 
 .grid-sizer,
 .grid-item {
-  width: 33.0%;
+  width: 33.33%;
 }
 
 .grid-item {

@@ -24,7 +24,7 @@
                 {
               ?>
   <div class="grid-item">
-    <img src="<?php echo $imgurl.$ns['image'] ?>" />
+      <a href="<?php echo $imgurl.$ns['image'] ?>" data-lightbox="roadtrip"> <img src="<?php echo $imgurl.$ns['image'] ?>" /></a>
   </div>
 
     <?php 
