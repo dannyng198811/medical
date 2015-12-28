@@ -9,18 +9,18 @@
         <link rel="shortcut icon" href="">
 
         <!-- build:css({.tmp,app}) /_/css/lib/html5bp.css -->
-        <link rel="stylesheet" href="/_/bower_components/html5-boilerplate/css/normalize.css">
-        <link rel="stylesheet" href="/_/bower_components/html5-boilerplate/css/main.css">
+        <link rel="stylesheet" type="text/css" href="/_/bower_components/html5-boilerplate/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="/_/bower_components/html5-boilerplate/css/main.css">
 <!--  <link rel="stylesheet" href="/_/bower_components/bootstrap/dist/css/bootstrap.min.css">-->
-        <link rel="stylesheet" href="/_/bower_components/lightbox2/dist/css/lightbox.css">
+        <link rel="stylesheet" type="text/css" href="/_/bower_components/lightbox2/dist/css/lightbox.css">
 
-        <link rel="stylesheet" href="/_/css/form.min.css">
+        <link rel="stylesheet" type="text/css" href="/_/css/form.min.css">
         <!-- endbuild -->
 
         <!-- build:css({.tmp,app}) /_/css/site-styles.css -->
-         <link rel="stylesheet" href="/_/css/grid.min.css">
-        <link rel="stylesheet" href="/_/css/main.css">
-        <link rel="stylesheet" href="/_/css/layout.css">
+         <link rel="stylesheet" type="text/css" href="/_/css/grid.min.css">
+        <link rel="stylesheet" type="text/css" href="/_/css/main.css">
+        <link rel="stylesheet" type="text/css" href="/_/css/layout.css">
        
 
         <!-- endbuild -->
