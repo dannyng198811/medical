@@ -34,12 +34,10 @@
  <!-- build:js(app) /_/js/main.js -->
         <script src="/_/bower_components/jquery/dist/jquery.js"></script>
         <script src="/_/bower_components/html5-boilerplate/js/plugins.js"></script>
-<!-- <script src="/_/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>-->
          <script src="/_/bower_components/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
          <script src="/_/bower_components/masonry/dist/masonry.pkgd.min.js"></script>
          <script src="/_/bower_components/flexslider/jquery.flexslider.js"></script>
-
-<script src="/_/js/form.min.js"></script>
+        <script src="/_/js/form.min.js"></script>
         <script src="/_/js/functions.js"></script>
         <script src="/_/js/validation.js"></script>
         <script type="text/javascript">
