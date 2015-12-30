@@ -37,32 +37,14 @@
          <script src="/_/bower_components/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
          <script src="/_/bower_components/masonry/dist/masonry.pkgd.min.js"></script>
          <script src="/_/bower_components/flexslider/jquery.flexslider.js"></script>
+         <script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.min.js"></script>
+
+
         <script src="/_/js/form.min.js"></script>
         <script src="/_/js/functions.js"></script>
         <script src="/_/js/validation.js"></script>
-        <script type="text/javascript">
-$(document).ready(function(){
+         <script src="/_/js/custom.js"></script>
 
-
- $('#flexslider').flexslider({controlNav: false,directionNav: false});
-  // init Masonry
-  var $grid = $('#grid').masonry({
-    itemSelector: '.grid-item',
-    percentPosition: true,
-    columnWidth: '.grid-sizer'
-  });
-// layout Masonry after each image loads
-$grid.imagesLoaded().progress( function() {
-  $grid.masonry();
-});
-$('.ui.checkbox').checkbox();      
-     
-
-});
-    
-   
-
-</script>
 
 
 <!-- build:remove:dist -->

@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Custom Favicon -->
-        <link rel="shortcut icon" href="">
+        <link rel="shortcut icon" href="/_/css/Favicon.png">
 
         <!-- build:css({.tmp,app}) /_/css/lib/html5bp.css -->
         <link rel="stylesheet" type="text/css" href="/_/bower_components/html5-boilerplate/css/normalize.css">

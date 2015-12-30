@@ -45,7 +45,7 @@ require_once 'init.php';?>
                          
   <div class="field mtb2">
     <label>分店：<b class="red">*</b></label>
-    <select class="ui dropdown">
+    <select id="store" class="ui dropdown">
       <option value="中环">中环</option>
       <option value="尖沙咀（ 1 ）">尖沙咀（ 1 ）</option>
    <option value="尖沙咀（ 2 ）">尖沙咀（ 2 ）</option>
@@ -63,22 +63,22 @@ require_once 'init.php';?>
              <div class="field"> 
            <label>咨询项目：<b class="red">*</b></label>    
         <div class="ui checkbox mtb08">
-          <input name="hot-deals" type="checkbox"><label> Hifu紧肤提拉</label>
+          <input name="inquiryproject[]" type="checkbox" value=" Hifu紧肤提拉"><label> Hifu紧肤提拉</label>
         </div>
                <div class="ui checkbox mtb08">
-          <input name="hot-deals" type="checkbox"><label> GentleLASE 激光脫毛</label>
+          <input name="inquiryproject[]" type="checkbox" value="GentleLASE 激光脫毛"><label> GentleLASE 激光脫毛</label>
         </div>
                <div class="ui checkbox mtb08">
-          <input name="hot-deals" type="checkbox"><label>Botox Restylane 輪廓塑形</label>
+          <input name="inquiryproject[]" type="checkbox" value="Botox Restylane 輪廓塑形"><label>Botox Restylane 輪廓塑形</label>
         </div>
                <div class="ui checkbox mtb08">
-          <input name="hot-deals" type="checkbox"><label>4D膠原提拉線</label>
+          <input name="inquiryproject[]" type="checkbox" value="4D膠原提拉線"><label>4D膠原提拉線</label>
         </div>
                <div class="ui checkbox mtb08">
-               <input name="hot-deals" type="checkbox"> <label>4D韓式雙眼皮吊線</label>
+               <input name="inquiryproject[]" type="checkbox" value="4D韓式雙眼皮吊線"> <label>4D韓式雙眼皮吊線</label>
              </div>
                <div class="ui checkbox mtb08">
-               <input name="hot-deals" type="checkbox"> <label>Fraxel Repair 分段式激光換膚</label>
+               <input name="inquiryproject[]" type="checkbox" value="Fraxel Repair 分段式激光換膚"> <label>Fraxel Repair 分段式激光換膚</label>
              </div>
                
                
@@ -87,22 +87,22 @@ require_once 'init.php';?>
               <div class="field">
                   <br/>
                  <div class="ui checkbox mtb08">
-               <input name="hot-deals" type="checkbox"> <label>Doublo-s 修身提升</label>
+               <input name="inquiryproject[]" type="checkbox" value="Doublo-s 修身提升"> <label>Doublo-s 修身提升</label>
              </div>
                  
              <div class="ui checkbox mtb08">
-               <input name="hot-deals" type="checkbox"> <label>IR 水光美肌</label>
+               <input name="inquiryproject[]" type="checkbox" value="IR 水光美肌"> <label>IR 水光美肌</label>
              </div>
           <div class="ui checkbox mtb08">
-              <input name="hot-deals" type="checkbox"> <label>Sculptra 逆齡童顏</label>
+              <input name="inquiryproject[]" type="checkbox" value="Sculptra 逆齡童顏"> <label>Sculptra 逆齡童顏</label>
             </div>
                   <div class="ui checkbox mtb08">
-              <input name="hot-deals" type="checkbox"> <label>心心臉塑形注射</label>
+              <input name="inquiryproject[]" type="checkbox" value="心心臉塑形注射"> <label>心心臉塑形注射</label>
             </div> <div class="ui checkbox mtb08">
-              <input name="hot-deals" type="checkbox"> <label>第五代水滴形豐胸</label>
+              <input name="inquiryproject[]" type="checkbox" value="第五代水滴形豐胸"> <label>第五代水滴形豐胸</label>
             </div>
                  <div class="ui checkbox mtb08">
-              <input name="hot-deals" type="checkbox"> <label>其他療程</label>
+              <input name="inquiryproject[]" type="checkbox" value="其他療程"> <label>其他療程</label>
             </div>
            
         </div>
@@ -111,7 +111,7 @@ require_once 'init.php';?>
                    
    <div class="field mtb2">
     <label>咨询内容</label>
-    <textarea></textarea>
+    <textarea id="msg"></textarea>
   </div>
     
     <div class="field mtb2">
@@ -167,7 +167,7 @@ require_once 'init.php';?>
         </div>
    </div>
  
-  <button class="ui button"  id="mysubmit">as</button>
+  <button class="ui button"  id="mysubmit">Submit</button>
 </form>
             </div>
            
@@ -184,7 +184,6 @@ require_once 'init.php';?>
   
  </div>
     
-
 
 
 
