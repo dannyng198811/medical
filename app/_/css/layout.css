@@ -34,23 +34,31 @@
 }
 
 .content{border-bottom:2px solid #224099;}
-
+.ui.grid{padding-left:20px;padding-right:20px;}
+.ui.grid.form-bor{margin-left:2rem;margin-right:2rem;}
 .menu{padding-top:1rem;}
-.menu ul{width:100%;text-align:center;}
-.menu ul li{display:inline-block;list-style:none;min-width:120px;text-align: center;}
-.menu ul li a{
+.menu>ul{width:100%;text-align:center;}
+.menu>ul>li,.down-menu ul li{display:inline-block;list-style:none;text-align: center;}
+.menu>ul>li{min-width:120px;}
+.down-menu ul li{width:100%;}
+.menu>ul>li>a{
     color:#605e5e;
     line-height:1.7rem;
     display:block;
     border:1px solid #ccccce;
-    margin-left: -4px;
+  
     background:url('../img/tit-bgw.jpg') center;
     transition:0.3s;
 }
 
 .down-menu{position:relative;z-index:99;}
-.down-menu ul{position:absolute;display:none;left:-38px}
-.down-menu ul li{width:204px;}
+.down-menu ul{position:absolute;display:none;background-color:#fff;box-shadow: 0 0 15px rgba(0,0,0,.3);}
+.down-menu ul li a{color:#605e5e;width:100%;
+    line-height:1.7rem;
+    display:block;
+    white-space:nowrap;
+    padding:0 15px;
+    transition:0.3s;}
 .down-menu:hover ul{display:block;}
 
 .menu ul li a:hover,

@@ -11,10 +11,11 @@
 
  <div class="content">
      <div class="ui container mtb2">
-         <div class="ui grid">
-            <div class="sixteen wide column">
+       <div class="">
               <img src="<?php echo $imgurl.$promotion['image'] ?>"/>
             </div>
+         <div class="ui grid mtb2">
+            
             <div class="six wide column">
                
                       <div class="tip tbg1"><p class="blue"><?php echo $promotion['content_row1'] ?></p></div>

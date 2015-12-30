@@ -19,8 +19,8 @@ module.exports = function (grunt) {
     var yeomanConfig = {
         app: 'app',
         dist: 'dist',
-        siteURL: 'localhost/dist',
-        devURL: 'localhost',
+        siteURL: '127.0.0.1/dist',
+        devURL: '127.0.0.1',
         devPort: 80
     };
 

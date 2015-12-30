@@ -18,28 +18,28 @@ require_once 'init.php';?>
                    
   <div class="field mtb2">
       <label>姓名：<b class="red">*</b></label>
-    <input name="first-name" placeholder="" type="text">
+    <input id="name" placeholder="" type="text">
   </div>
       
   <div class="field mtb2">
     <label>年龄：<b class="red">*</b></label>
     <select class="ui dropdown">
-      <option value="0">18至25</option>
-      <option value="1">26至32</option>
-      <option value="2">33至39</option>
-      <option value="3">40至55</option>
-      <option value="4">55以上</option>
+      <option value="18至25">18至25</option>
+      <option value="26至32">26至32</option>
+      <option value="33至39">33至39</option>
+      <option value="40至55">40至55</option>
+      <option value="55以上">55以上</option>
     
     </select>
   </div>
  
    <div class="field mtb2">
     <label>电话：<b class="red">*</b></label>
-    <input name="first-name" placeholder="" type="text">
+    <input id="phone" placeholder="" type="text">
   </div>
       <div class="field mtb2">
     <label>邮箱：<b class="red">*</b></label>
-    <input name="first-name" placeholder="" type="text">
+    <input id="email" placeholder="" type="text">
   </div>
       
                          
@@ -185,5 +185,42 @@ require_once 'init.php';?>
  </div>
     
 
+
+<script type="text/javascript">
+ $(document).ready(function(){
+      
+ $('#mysubmit').click(function(event){
+     event.preventDefault();
+ $('#mysubmit').attr("disabled",true); 
+     var myname=$('#myname').val();
+    var myemail=$('#myemail').val();
+     var mymsg=$('#mymsg').val();
+console.log(myname);
+   if( myname=="" || myemail==""||mymsg=="")
+       return alert("請完整填寫信息");
+     
+     $.post("mail.php",
+     {
+    myname:myname,
+   myemail :myemail,
+         mymsg:mymsg
+     },
+  function(data,status){
+         
+         
+         if(data!="ok"){
+              alert("遞交失敗，請重試！");
+              $('#mysubmit').attr("disabled",false); 
+
+         }else{
+         $('#myname').val("");$('#myemail').val("");$('#mymsg').val("");
+         alert("遞交成功！");}
+        
+  });
+     
+ });  
+   
+ });
+</script>
 
 <?php include 'inc/footer.php'  ?>

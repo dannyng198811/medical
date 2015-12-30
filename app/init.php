@@ -10,7 +10,7 @@
     $db->query('set names utf8;');
     }catch(Exception $e){
         echo "Cannot connect to database,Please come back later!";
-         
+         echo  $e;
         exit();   
     }
 

@@ -23,7 +23,7 @@
                     
                 </div>
                 <div class="right floated seven wide column">
-                    <p class="copyr">Design by <a href="http://www.c-m.hk" target="blank">Creation Media</a></p>
+                   <!--  <p class="copyr">Design by <a href="http://www.c-m.hk" target="blank">Creation Media</a></p> -->
                     
                 </div>
             </div>
