@@ -42,6 +42,8 @@
         <script src="/_/js/validation.js"></script>
         <script type="text/javascript">
 $(document).ready(function(){
+
+
  $('#flexslider').flexslider({controlNav: false,directionNav: false});
   // init Masonry
   var $grid = $('#grid').masonry({
@@ -54,13 +56,13 @@ $grid.imagesLoaded().progress( function() {
   $grid.masonry();
 });
 $('.ui.checkbox').checkbox();      
- 
+     
+
 });
     
    
 
 </script>
-        <!-- endbuild -->
 
 
 <!-- build:remove:dist -->

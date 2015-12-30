@@ -14,7 +14,7 @@ require_once 'init.php';?>
          </div>
            <div class="ui grid form-bor">  
              <div class="nine wide column">
-               <form class="ui form">
+               <form class="ui form" action="">
                    
   <div class="field mtb2">
       <label>姓名：<b class="red">*</b></label>
@@ -23,7 +23,7 @@ require_once 'init.php';?>
       
   <div class="field mtb2">
     <label>年龄：<b class="red">*</b></label>
-    <select class="ui dropdown">
+    <select id="age" class="ui dropdown">
       <option value="18至25">18至25</option>
       <option value="26至32">26至32</option>
       <option value="33至39">33至39</option>
@@ -46,14 +46,14 @@ require_once 'init.php';?>
   <div class="field mtb2">
     <label>分店：<b class="red">*</b></label>
     <select class="ui dropdown">
-      <option value="0">中环</option>
-      <option value="1">尖沙咀（ 1 ）</option>
-   <option value="1">尖沙咀（ 2 ）</option>
-      <option value="4">旺角（ 1 ）</option>
-      <option value="4">旺角（ 2 ）</option>
+      <option value="中环">中环</option>
+      <option value="尖沙咀（ 1 ）">尖沙咀（ 1 ）</option>
+   <option value="尖沙咀（ 2 ）">尖沙咀（ 2 ）</option>
+      <option value="旺角（ 1 ）">旺角（ 1 ）</option>
+      <option value="旺角（ 2 ）">旺角（ 2 ）</option>
 
-      <option value="2">屯门</option>
-      <option value="3">元朗</option>
+      <option value="屯门">屯门</option>
+      <option value="元朗">元朗</option>
     
     </select>
   </div>
@@ -167,7 +167,7 @@ require_once 'init.php';?>
         </div>
    </div>
  
-  <button class="ui button" type="submit">Submit</button>
+  <button class="ui button"  id="mysubmit">as</button>
 </form>
             </div>
            
@@ -186,41 +186,6 @@ require_once 'init.php';?>
     
 
 
-<script type="text/javascript">
- $(document).ready(function(){
-      
- $('#mysubmit').click(function(event){
-     event.preventDefault();
- $('#mysubmit').attr("disabled",true); 
-     var myname=$('#myname').val();
-    var myemail=$('#myemail').val();
-     var mymsg=$('#mymsg').val();
-console.log(myname);
-   if( myname=="" || myemail==""||mymsg=="")
-       return alert("請完整填寫信息");
-     
-     $.post("mail.php",
-     {
-    myname:myname,
-   myemail :myemail,
-         mymsg:mymsg
-     },
-  function(data,status){
-         
-         
-         if(data!="ok"){
-              alert("遞交失敗，請重試！");
-              $('#mysubmit').attr("disabled",false); 
 
-         }else{
-         $('#myname').val("");$('#myemail').val("");$('#mymsg').val("");
-         alert("遞交成功！");}
-        
-  });
-     
- });  
-   
- });
-</script>
 
 <?php include 'inc/footer.php'  ?>
