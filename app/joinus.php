@@ -18,25 +18,25 @@ require_once 'init.php';?>
   <div class="four fields">                  
   <div class="field mtb2">
       <label>姓名：<b class="red">*</b></label>
-    <input name="first-name" placeholder="姓名" type="text">
+    <input id="name" placeholder="姓名" type="text">
   </div>
       
   
  
    <div class="field mtb2">
     <label>电话：<b class="red">*</b></label>
-    <input name="first-name" placeholder="电话" type="text">
+    <input id="tel" placeholder="电话" type="text">
   </div>
        <div class="field mtb2">
     <label>邮箱：<b class="red">*</b></label>
-    <input name="first-name" placeholder="邮箱" type="text">
+    <input id="email" placeholder="邮箱" type="text">
   </div>
       
       <div class="field mtb2">
     <label>性别：<b class="red">*</b></label>
-    <select class="ui dropdown">
-      <option value="0">女</option>
-      <option value="1">男</option>
+    <select id="sex" class="ui dropdown">
+      <option value="女">女</option>
+      <option value="男">男</option>
      
     
     </select>
@@ -49,7 +49,7 @@ require_once 'init.php';?>
                              
   <div class="field mtb2">
     <label>年龄：<b class="red">*</b></label>
-    <select class="ui dropdown">
+    <select id="age" class="ui dropdown">
       <option value="0">18--25岁</option>
       <option value="1">26--32岁</option>
       <option value="2">33--39岁</option>
@@ -61,7 +61,7 @@ require_once 'init.php';?>
      
       <div class="field mtb2">
     <label>工作经验年资：<b class="red">*</b></label>
-    <select class="ui dropdown">
+    <select id="year" class="ui dropdown">
       <option value="0">1年以下</option>
       <option value="1">1--3年</option>
       <option value="2">3--5年</option>
@@ -77,10 +77,10 @@ require_once 'init.php';?>
            <div class="field"> 
            <label>应聘职位：<b class="red">*</b></label>    
         <div class="ui checkbox mtb08">
-          <input name="hot-deals" type="checkbox"><label> 分店经理</label>
+          <input name="position[]" type="checkbox"><label> 分店经理</label>
         </div>
          <div class="ui checkbox mtb08">
-          <input name="hot-deals" type="checkbox"><label> 美容治疗师/美容师/按摩师/美容学徒</label>
+          <input name="position[]" type="checkbox"><label> 美容治疗师/美容师/按摩师/美容学徒</label>
         </div>
              
              </div>
@@ -88,20 +88,20 @@ require_once 'init.php';?>
              <div class="field">
                   <br/>
              <div class="ui checkbox mtb08">
-               <input name="hot-deals" type="checkbox"> <label>销售经理</label>
+               <input name="position[]" type="checkbox"> <label>销售经理</label>
              </div>
             <div class="ui checkbox mtb08">
-              <input name="hot-deals" type="checkbox"> <label>前台接待员</label>
+              <input name="position[]" type="checkbox"> <label>前台接待员</label>
             </div>
            
         </div>
             <div class="field">
                   <br/>
              <div class="ui checkbox mtb08">
-               <input name="hot-deals" type="checkbox"> <label>美容顾问/美容顾问助理</label>
+               <input name="position[]" type="checkbox"> <label>美容顾问/美容顾问助理</label>
              </div>
             <div class="ui checkbox mtb08">
-              <input name="hot-deals" type="checkbox"> <label>电话客户服务主任</label>
+              <input name="position[]" type="checkbox"> <label>电话客户服务主任</label>
             </div>
            
         </div>
@@ -112,12 +112,12 @@ require_once 'init.php';?>
 <div class="two fields mtb2">                 
    <div class="field mtb2">
     <label>相关工作经验：</label>
-    <textarea></textarea>
+    <textarea id="exp"></textarea>
   </div>
     
      <div class="field mtb2">
     <label>薪金要求<b class="red">*</b>：</label>
-    <input name="first-name" placeholder="薪金要求" type="text">
+    <input id="wage" placeholder="薪金要求" type="text">
   </div>
     
 </div> 
@@ -128,7 +128,7 @@ require_once 'init.php';?>
     <div class="field mtb2">
         <label>隐私保护条例：<b class="red">*</b></label> 
     <div class="ui checkbox mtb08">
-          <input name="hot-deals" type="checkbox">
+          <input name="terms[]" type="checkbox">
         <label>本人日后愿意收取有关EM嘉悦医疗，美型堂或其他联营机构的宣传及推广资讯</label>
           
         </div>
@@ -136,12 +136,12 @@ require_once 'init.php';?>
     <div class="field mtb2">
         <div class="ui checkbox mtb08">
             <br/>
-          <input name="hot-deals" type="checkbox">
+          <input name="terms[]" type="checkbox">
           <label>我已阅读并同意有关条款</label>
         </div>
    </div>
  </div>
-  <button class="ui button" type="submit">Submit</button>
+  <button id="joinsubmit" class="ui button" type="submit">Submit</button>
 </form>
             </div>
            

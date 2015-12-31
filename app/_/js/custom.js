@@ -15,8 +15,9 @@ $(document).ready(function(){
 
 
 $('#mysubmit').click(function(event){
-     //event.preventDefault();
  
+    event.preventDefault();
+ //#1 get data
 var name=$('#name').val()
 var age=$('#age').val()
 var phone=$('#phone').val()
@@ -26,43 +27,79 @@ var store=$('#store').val()
 
 var inquiryprojects=[];
  $("input[name='inquiryproject[]']").each(function(){
-//alert($(this).val());
+if($(this).prop('checked'))
 inquiryprojects.push($(this).val());
-console.log(inquiryprojects);
  });
 
+
+var source=[];
+ $("input[name='source[]']").each(function(){
+if($(this).prop('checked'))
+source.push($(this).val());
+ });
 var msg=$('#msg').val()
 
+var subscription=$('#subscription').prop('checked')
 
-//validation
-
-
-
-//
-   
+var read=$('#read').prop('checked')
 
 
 
 
-/*ajax post
-   $.post("mail.php",
+
+
+
+
+
+
+
+// 2# validation
+if(name==""||age==""||phone==""||email==""||store==""||source==""||inquiryprojects==""){
+    
+    alert('請完整填妥表單')
+    return ;
+}
+
+    
+if(!read){
+    alert('請阅读并同意有关条款')
+    return ;
+}   
+
+// 3# post data
+      $('#mysubmit').attr("disabled",true);   
+ $('#mysubmit').html("submitting...");
+$.post("mail.php",
      {
-    myname:myname,
-  	myemail :myemail,
-    mymsg:mymsg
+    name:name,
+  	email :email,
+    phone :phone,
+    age :age,
+    store :store,
+    inquiryprojects:inquiryprojects,
+    source:source,
+    msg:msg,
+    subscription:subscription
      },
   function(data,status){
          
          
          if(data!="ok"){
               alert("遞交失敗，請重試！");
-              $('#mysubmit').attr("disabled",false); 
-
+            
          }else{
-         $('#myname').val("");$('#myemail').val("");$('#mymsg').val("");
-         alert("遞交成功！");}
+         $('#name').val("");
+             $('#email').val("");
+              $('#phone').val("");
+
+             $('#msg').val("");
+         alert("遞交成功！");
+         
+         }
+      $('#mysubmit').attr("disabled",false); 
+     $('#mysubmit').html("submit");
         });
- ajax post*/ 
+  
      
    
      
