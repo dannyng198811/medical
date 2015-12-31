@@ -68,7 +68,7 @@ if(!read){
 
 // 3# post data
       $('#mysubmit').attr("disabled",true);   
- $('#mysubmit').html("submitting...");
+ $('#mysubmit').html("Submitting...");
 $.post("mail.php",
      {
     name:name,
@@ -97,7 +97,7 @@ $.post("mail.php",
          
          }
       $('#mysubmit').attr("disabled",false); 
-     $('#mysubmit').html("submit");
+     $('#mysubmit').html("Submit");
         });
   
      

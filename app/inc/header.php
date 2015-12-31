@@ -35,7 +35,7 @@
       <div class="ui container">
          <div class="ui grid">
              <div class="four column row">
-                <div class="left floated column">
+                <div class="left floated column" style="padding: 15px;">
                    <img src="/_/img/logo.png"/>
                 </div>
                 <div class="right floated column">
