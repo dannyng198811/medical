@@ -71,7 +71,7 @@ $rs = $db->query("SELECT * FROM sharing");
             <?php foreach( $sharings as $sh){?>
             
               <div class="column bp1">
-               <a target="blank" href="<?php echo $imgurl.$sh['url'] ?>">
+               <a target="blank" href="<?php echo $sh['url'] ?>">
                <div class="move-cov">
                  <img src="<?php echo $imgurl.$sh['image'] ?>"/>
                  <div>
