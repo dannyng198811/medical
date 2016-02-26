@@ -51,35 +51,43 @@ require_once 'init.php';?>
                  
              </div>
              
-             <div class="column row nop "><p class="mt03" style="padding-left:15px;">全港分店地址： </p></div>
+             <div class="column row nop "><p class="mt03" >全港分店地址： </p></div>
             
              <div class="three column row nop">
                  <div class="column">
-                     <p>中环店 : 中环皇后大道中70号卡佛大厦22楼2206-07室<br/>电话 : 2882 6100</p>
+                     <p style="    margin: 5px 0px;" >中环店 : 中环皇后大道中70号卡佛大厦22楼2206-07室<br/>电话 : 2882 6100</p>
                  </div>
-               <div class="column">
-                   <p>铜锣湾店 : 铜锣湾渣甸街50号渣甸中心16楼全层<br/>电话 : 2567 8444</p>
+                <div class="column">
+                     <p style="    margin: 5px 0px;">尖沙咀店(2) : 尖沙咀金马伦道18-20号万勤商业大厦15楼A室<br/>电话 : 2353 0202</p>
                  </div>
+                  <div class="column">
+                     <p style="    margin: 5px 0px;">旺角店(2) : 旺角山东街38号38广场5楼B室<br/>电话 :  2890 9300</p>
+                 </div>
+                 
                  <div class="column">
-                     <p>尖沙咀店(1) : 尖沙咀漆咸道南57-59号金马伦中心11楼全层<br/>电话 : 3105 0171</p>
+                   <p style="    margin: 5px 0px;">铜锣湾店 : 铜锣湾渣甸街50号渣甸中心16楼全层<br/>电话 : 2567 8444</p>
                  </div>
-                 <div class="column">
-                     <p>尖沙咀店(2) : 尖沙咀金马伦道18-20号万勤商业大厦15楼A室<br/>电话 : 2353 0202</p>
+                 
+                  <div class="column">
+                     <p style="    margin: 5px 0px;"> 尖沙咀店(3) : 尖沙咀金马伦道18-20号万勤商业大厦15楼B室<br/>电话 :  2414 8444</p>
                  </div>
-                 <div class="column">
-                     <p> 尖沙咀店(3) : 尖沙咀金马伦道18-20号万勤商业大厦15楼B室<br/>电话 :  2414 8444</p>
+                 
+                  <div class="column">
+                     <p style="    margin: 5px 0px;"> 屯门店 : 屯门栢丽广场15楼1512室<br/>电话 :  2456 3268</p>
                  </div>
+                 
                  <div class="column">
-                     <p>旺角店(1) : 旺角山东街38号38广场5楼A室<br/>电话 :  2155 9986</p>
+                     <p style="    margin: 5px 0px;">尖沙咀店(1) : 尖沙咀漆咸道南57-59号金马伦中心11楼全层<br/>电话 : 3105 0171</p>
                  </div>
+                
+                
                  <div class="column">
-                     <p>旺角店(2) : 旺角山东街38号38广场5楼B室<br/>电话 :  2890 9300</p>
+                     <p style="    margin: 5px 0px;">旺角店(1) : 旺角山东街38号38广场5楼A室<br/>电话 :  2155 9986</p>
                  </div>
+                
+                
                  <div class="column">
-                     <p> 屯门店 : 屯门栢丽广场15楼1512室<br/>电话 :  2456 3268</p>
-                 </div>
-                 <div class="column">
-                     <p>元朗店 : 元朗大棠路11号光华广场13楼06室<br/>电话 : 2352 0072</p>
+                     <p style="    margin: 5px 0px;">元朗店 : 元朗大棠路11号光华广场13楼06室<br/>电话 : 2352 0072</p>
                  </div>
 
 
