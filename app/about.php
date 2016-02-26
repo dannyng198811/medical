@@ -58,7 +58,7 @@ require_once 'init.php';?>
                      <p style="    margin: 5px 0px;" >中环店 : 中环皇后大道中70号卡佛大厦22楼2206-07室<br/>电话 : 2882 6100</p>
                  </div>
                 <div class="column">
-                     <p style="    margin: 5px 0px;">尖沙咀店(2) : 尖沙咀金马伦道18-20号万勤商业大厦15楼A室<br/>电话 : 2353 0202</p>
+                     <p style="    margin: 5px 0px;">尖沙咀店(2) : 尖沙咀金马伦道18-20号万勤商业大厦15楼A室<br/>电话 : 2414 8444</p>
                  </div>
                   <div class="column">
                      <p style="    margin: 5px 0px;">旺角店(2) : 旺角山东街38号38广场5楼B室<br/>电话 :  2890 9300</p>
@@ -69,7 +69,7 @@ require_once 'init.php';?>
                  </div>
                  
                   <div class="column">
-                     <p style="    margin: 5px 0px;"> 尖沙咀店(3) : 尖沙咀金马伦道18-20号万勤商业大厦15楼B室<br/>电话 :  2414 8444</p>
+                     <p style="    margin: 5px 0px;"> 尖沙咀店(3) : 尖沙咀金马伦道18-20号万勤商业大厦15楼B室<br/>电话 :  2353 0202</p>
                  </div>
                  
                   <div class="column">
