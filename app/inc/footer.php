@@ -44,8 +44,31 @@
         <script src="/_/js/functions.js"></script>
         <script src="/_/js/validation.js"></script>
          <script src="/_/js/custom.js"></script>
+        <script src="/_/owl-carousel/owl.carousel.js"></script>
 
 
+<script>
+            $(document).ready(function() {
+      $("#owl-demo").owlCarousel({
+
+     // navigation : true,
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem : true,
+          autoPlay	:true,
+          
+
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+
+      });
+    });
+
+         </script>
 
 <!-- build:remove:dist -->
 <script src="//localhost:99/livereload.js"></script>

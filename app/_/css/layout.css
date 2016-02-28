@@ -63,7 +63,7 @@
 .down-menu:hover ul{display:block;}
 
 .menu ul li a:hover,
-.active{background:url('../img/tit-bg.jpg') center!important;color:#fff!important;border-color:#224099!important}
+.menu .active{background:url('../img/tit-bg.jpg') center!important;color:#fff!important;border-color:#224099!important}
 
 .promo{width:210px!important;left:-5rem;}
 .promo li{width:100%}

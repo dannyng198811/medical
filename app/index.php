@@ -23,11 +23,19 @@ $rs = $db->query("SELECT * FROM sharing");
   <div class="ui container">
          
 
- <div class="slider">
-     
-      <img src="/_/img/ban1.jpg" />
-    
-</div><!--slider end--> 
+ 
+      
+      <div id="owl-demo" class="owl-carousel">
+  <div class="item">  <img src="/_/img/ban1.jpg" data-thumb="/_/img/ban1.jpg" alt="" data-transition="slideInLeft"/> </div>
+  <div class="item"> <img src="/_/img/ban2.jpg" data-thumb="/_/img/ban2.jpg" alt=""  data-transition="slideInLeft"/> </div>
+    <div class="item"> <img src="/_/img/ban3.jpg" data-thumb="/_/img/ban3.jpg" alt=""  data-transition="slideInLeft"/> </div>
+  <div class="item"> <img src="/_/img/ban4.jpg" data-thumb="/_/img/ban4.jpg" alt=""  data-transition="slideInLeft"/> </div>
+  <div class="item"> <img src="/_/img/ban5.jpg" data-thumb="/_/img/ban5.jpg" alt=""  data-transition="slideInLeft"/> </div>
+
+ 
+</div>
+      
+      
        <div class="ui grid">
            
                 <div class="eight wide column">

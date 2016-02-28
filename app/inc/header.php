@@ -13,7 +13,7 @@
         <link rel="stylesheet" type="text/css" href="/_/bower_components/html5-boilerplate/css/main.css">
 <!--  <link rel="stylesheet" href="/_/bower_components/bootstrap/dist/css/bootstrap.min.css">-->
         <link rel="stylesheet" type="text/css" href="/_/bower_components/lightbox2/dist/css/lightbox.css">
-
+        
         <link rel="stylesheet" type="text/css" href="/_/css/form.min.css">
         <!-- endbuild -->
 
@@ -21,9 +21,11 @@
          <link rel="stylesheet" type="text/css" href="/_/css/grid.min.css">
         <link rel="stylesheet" type="text/css" href="/_/css/main.css">
         <link rel="stylesheet" type="text/css" href="/_/css/layout.css">
-       
-
+       <link rel="stylesheet" type="text/css" href="/_/css/default/default.css">
         <!-- endbuild -->
+<link rel="stylesheet" href="_/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="_/owl-carousel/owl.theme.css">
+
 
         <!-- build:js /_/js/lib/modernizr/modernizr.js -->
         <script src="/_/bower_components/modernizr/dist/js/modernizr.js"></script>
