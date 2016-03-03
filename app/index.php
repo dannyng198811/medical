@@ -41,34 +41,46 @@ $rs = $db->query("SELECT * FROM sharing");
                 <div class="eight wide column">
                    <h4 class="tit-style"><span>EM简介</span></h4> 
                 <p>  <?php echo $system['home_desc'] ?></p>
-                    <div class="ui three column grid">
-                        <div class="column"><img src="/_/img/index2.jpg"/></div>
-                        <div class="column"><img src="/_/img/index3.jpg"/></div>
-                        <div class="column"><img src="/_/img/index1.jpg"/></div>
-                    </div>
+                    
                 </div>
                  
                 <div class="eight wide column">
                    <h4 class="tit-style"><span>热门疗程</span></h4> 
-                     <div class="ui four column grid padded">
-                       <div class="column"><img src="/_/img/val1.jpg"/></div>
-                       <div class="column"><img src="/_/img/val2.jpg"/></div>
-                       <div class="column"><img src="/_/img/val3.jpg"/></div>
-                       <div class="column"><img src="/_/img/val4.jpg"/></div>
-                       <div class="column nop"><img src="/_/img/in1.jpg"/></div>
-                       <div class="column nop"><img src="/_/img/in2.jpg"/></div>
-                       <div class="column nop"><img src="/_/img/in3.jpg"/></div>
-                       <div class="column nop"><img src="/_/img/in4.jpg"/></div>
-                       <div class="column nop"><img src="/_/img/in5.jpg"/></div>
-                       <div class="column nop"><img src="/_/img/in6.jpg"/></div>
-                       <div class="column nop"><img src="/_/img/in7.jpg"/></div>
-                       <div class="column nop"><img src="/_/img/in8.jpg"/></div>
+                     <div class="ui five column grid padded">
+                       <div class="column"><img style="height:130px;"src="/_/img/m1.png"/></div>
+                     
+                       <div class="column"><img style="height:130px;" src="/_/img/m2.png"/></div>
+                         
+                           <div class="column"><img style="height:130px;" src="/_/img/m3.png"/></div>
+                        <div class="column"><img style="height:130px;" src="/_/img/m4.png"/></div>
+                                                 <div class="column"><img style="height:130px;" src="/_/img/m5.png"/></div>
+
+                      
                      </div>
                 </div>
             
            
          </div><!--ui grid end-->
       
+      
+      <div class="ui grid">
+             <div class="ui ten column grid padded">
+                      
+                       <div class="column nop"><img src="/_/img/1.png"/></div>
+                                        <div class="column nop"><img src="/_/img/in6.jpg"/></div>
+
+                       <div class="column nop"><img src="/_/img/in2.jpg"/></div>
+                       <div class="column nop"><img src="/_/img/in3.jpg"/></div>
+                       <div class="column nop"><img src="/_/img/in4.jpg"/></div>
+                                        <div class="column nop"><img src="/_/img/6.png"/></div>
+
+                       <div class="column nop"><img src="/_/img/in5.jpg"/></div>
+                       <div class="column nop"><img src="/_/img/in7.png"/></div>
+                       <div class="column nop"><img src="/_/img/in8.jpg"/></div>
+                     </div>
+               
+      
+      </div>
       <div class="ui grid">
         <div class="column">
           <h4 class="tit-style"><span>星级分享</span></h4>
